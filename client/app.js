@@ -29,7 +29,7 @@ function onClickedEstimatePrice(){
     var url = // missing
 
     $.post(url, {
-        total_sqft: parseFloat(sqqft.value),
+        total_sqft: parseFloat(sqft.value),
         bhk: bhk,
         bath: bathrooms,
         location: location.value

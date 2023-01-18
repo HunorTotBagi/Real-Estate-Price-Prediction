@@ -6,13 +6,16 @@
         <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <h2>Area (Square Feet)</h2>
-    <input value="1000">
+    <h2>Area in square feet</h2>
+    <input placeholder="Enter a number">
+
     <h2>Number of bedrooms</h2>
-    <input value="3">
+    <input placeholder="Enter a number">
     <h2>Number of bathrooms</h2>
-    <input value="1">
+
+    <input placeholder="Enter a number">
     <h2>Location</h2>
+    
     <select>
         <option value="" disabled="disabled" selected="selected">Choose a location</option>
         <option>Electronic City</option>
@@ -20,11 +23,14 @@
         </option>
     </select>
 
-    <button onclick="onClickedEstimatePrice()" type="button">Estimate price</button>
-    <div id="uiEstimatedPrice">
-         <h2>
-
-         </h2>
+    <div>
+        <button onclick="onClickedEstimatePrice()" type="button">Estimate price</button>
+        <div id="uiEstimatedPrice">
+             <h2>
+    
+             </h2>
+        </div>
     </div>
+    
 </body>
 </html>
