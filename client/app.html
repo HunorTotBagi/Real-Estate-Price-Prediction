@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <title>Home Price Prediction</title>
-        <script src = "app.js"></script>
-        <link rel="stylesheet" href="app.css">
-</head>
-<body>
-    <h2>Area in square feet</h2>
-    <input placeholder="Enter a number">
-
-    <h2>Number of bedrooms</h2>
-    <input placeholder="Enter a number">
-    <h2>Number of bathrooms</h2>
-
-    <input placeholder="Enter a number">
-    <h2>Location</h2>
-    
-    <select>
-        <option value="" disabled="disabled" selected="selected">Choose a location</option>
-        <option>Electronic City</option>
-        <option>Rajaji Nagar
-        </option>
-    </select>
-
-    <div>
-        <button onclick="onClickedEstimatePrice()" type="button">Estimate price</button>
-        <div id="uiEstimatedPrice">
-             <h2>
-    
-             </h2>
-        </div>
+  <head>
+    <title>Area Calculator</title>
+    <link rel="stylesheet" type="text/css" href="app.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Area in square feet</h1>
+      <form>
+        <input type="text" placeholder="Enter area in sqft">
+      </form>
+      <h1>Number of bedrooms</h1>
+      <form>
+        <input type="text" placeholder="Enter number of bedrooms">
+      </form>
+      <h1>Number of bathrooms</h1>
+      <form>
+        <input type="text" placeholder="Enter number of bathrooms">
+      </form>
+      <button type="submit">Calculate</button>
     </div>
-    
-</body>
+    <div class="container">
+      <h1>Location</h1>
+      <form>
+        <select>
+          <option value="electronicCity">Electronic City</option>
+          <option value="rajajiNagar">Rajaji Nagar</option>
+        </select>
+      </form>
+    </div>
+  </body>
 </html>
